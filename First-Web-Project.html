@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Project</title>
+
+    <script src="https://kit.fontawesome.com/63fe7a02dc.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+    
+        body{
+            background-color: black;
+        }
+
+        .head{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            padding: 20px;
+            width: 100%;
+            background-color:transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        
+        .goal{
+            font-size: 25px;
+            color: darkorchid;
+            text-decoration: none;
+            font-weight: 600;
+            
+          }
+       
+        .navbar a{
+            font-size: 16px;
+            font-weight: 500;
+            color:rgb(255, 0, 136);
+            text-decoration: none;
+            margin-left: 20px;
+            transition:2s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active{
+                color:greenyellow;
+            }
+
+            .home-content{
+                color:honeydew;
+            }
+
+            .home{
+                height: 100vh;
+                display: flex;
+                align-items:center ;
+            }
+
+            .home-content{
+                max-width: 500px;
+            }
+
+            .home-content h1{
+                font-size: 60px;
+                font-weight: 500px;
+               
+            }
+            
+            .home-content p{
+                font-size: 18px;
+                margin: 20px 0 4px;
+                line-height: 1.2;
+            }
+
+            .home-content .yoo{
+                display: flex;
+                justify-content: space-between;
+                width: 345px;
+                height: 50px;
+                
+            }
+           
+            .yoo a{
+                position: relative;
+               display: inline-flex; 
+              height: 100%;
+              width:150px;
+              background-color:cyan;
+              border: 3px solid blue;
+              border-radius: 8px; 
+              font-size:21px ;
+              color: black;
+              text-decoration: none;
+               font-weight: 600; 
+              letter-spacing: 1px;
+              align-items: center;
+              justify-content: center;
+              z-index: 1;
+              overflow: hidden;
+              transition: .5s;
+             
+            }
+
+            .yoo a:nth-child(){
+                background-color: transparent;
+                /* color: deeppink; */
+            }
+
+            .yoo a:nth-child():hover{
+                color: deeppink;
+            }
+
+            .yoo a:nth-child()::before{
+                background-color:deeppink;
+            }
+
+            .yoo a::before{
+                content: "";
+                position: absolute;
+                top:0 ;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background-color: deeppink;
+                border-radius: 6px;
+                z-index: -1;
+                transition: .5s;
+
+
+            }
+
+            .yoo a:hover::before{
+                width: 100%;
+
+            }
+
+            .home-icon {
+                position: relative;
+                bottom:20px;
+                width: 180px;
+                background-color:transparent; 
+                font-size: 51px; 
+                /* border: 2px solid blueviolet;
+                border-radius: 6px; */
+               
+               
+                
+
+                transition: all 1s ease-in-out 1s;
+ 
+            }
+
+            .home-icon :hover{
+                color: cyan;
+            }
+
+            .home-icon a{
+                
+                width: 40px;
+                height: 40px;
+                
+            }
+
+            
+        
+    </style>
+</head>
+<body>
+
+   <!-- <h4><i>Presented By Soumyadip Ghosh.</i></h4> -->
+   <header class="head">
+
+    <a class="goal">Soumyadip Ghosh.</a>
+
+    <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">About MySelf</a> 
+        <a href="#">My Projects</a> 
+        <a href="#">Services</a> 
+        <a href="#">Contact Me</a> 
+    </nav>
+</header>
+
+<section class="Home">
+
+  <div class="home-content"> <br> <br> <br> <br> <br><br><br><br> <br><br><br>
+
+
+    <h1><b><i>Hi I am Soumyadip Ghosh</i></b></h1> <br>
+
+    <p>Hi my name is Soumyadip Ghosh and this is my first tribute page. I hope you guys are like this page and please explore my page in depth and thank you for visiting my page.</p>  <br>
+    <div class="yoo"> <br>
+        <a href="#">Hire Me</a>
+        <a href="#">Let's Talk</a>
+    </div>
+  </div> <br> <br>
+
+  <div class="home-icon">
+
+    <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+    <a href="#"><i class="fa-brands fa-square-github"></i></a> 
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+  </div>
+</section>
+     
+</body>
+</html>
